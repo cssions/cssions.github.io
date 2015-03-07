@@ -1,0 +1,127 @@
+
+
+/* -----------------------------------------------------------
+	Base : box model
+----------------------------------------------------------- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------
+	Base : reset
+----------------------------------------------------------- */
+html, body, h1, h2, p {
+	margin:0;
+	padding:0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+/* -----------------------------------------------------------
+	Base : typo
+----------------------------------------------------------- */
+@font-face{
+	font-family:"Roboto Slab";
+	src:url(fonts/robotoslab-light-webfont.eot);
+	src:url(fonts/robotoslab-light-webfont.eot?#iefix) format('embedded-opentype'),
+	url(fonts/robotoslab-light-webfont.woff) format('woff'),
+	url(fonts/robotoslab-light-webfont.ttf) format('truetype'),
+	url(fonts/robotoslab-light-webfont.svg?#RobotoSlab) format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+%roboto {
+	font-family:"Roboto Slab";
+}
+
+@font-face{
+	font-family: Lato;
+	src:url(fonts/lato-bla-webfont.eot);
+	src:url(fonts/lato-bla-webfont.eot?#iefix) format('embedded-opentype'),
+	url(fonts/lato-bla-webfont.woff) format('woff'),
+	url(fonts/lato-bla-webfont.ttf) format('truetype'),
+	url(fonts/lato-bla-webfont.svg?#Lato) format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+%lato {
+	font-family:Lato;
+}
+
+@font-face{
+	font-family: "Lato Reg";
+	src:url(fonts/lato-reg-webfont.eot);
+	src:url(fonts/lato-reg-webfont.eot?#iefix) format('embedded-opentype'),
+	url(fonts/lato-reg-webfont.woff) format('woff'),
+	url(fonts/lato-reg-webfont.ttf) format('truetype'),
+	url(fonts/lato-reg-webfont.svg?#Lato) format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+%lato-light {
+	font-family:"Lato Reg";
+}
+
+body {
+	background:#9ec6c5;
+	@extend %roboto;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height:24px;
+}
+
+h1,h3,h4,h5 {
+	@extend %lato;
+	font-weight:normal;
+}
+
+
+h1 {
+	font-size:50px;
+	line-height:50px;
+	color:#fff;
+	letter-spacing:4px;
+	text-align:center;
+	margin:80px 0 0 0;
+	&:before, &:after {
+		color:#525768;
+	}
+	&:before {
+		content:"{ ";
+	}
+	&:after {
+		content:" }";
+	}
+	span {
+		@extend %lato-light;
+	}
+}
+
+h2 {
+	font-size:28px;
+	line-height:34px;	
+	text-align:center;
+	@extend %roboto;
+	color:#fff;
+	font-weight:normal;
+	margin:30px 30px 0 30px;
+}
+
+p {
+	text-align:center;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
