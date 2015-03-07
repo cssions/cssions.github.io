@@ -71,6 +71,8 @@ h1 {
     content: "{ "; }
   h1:after {
     content: " }"; }
+  h1 span {
+    color: #d4f2f1; }
 
 h2 {
   font-size: 28px;
