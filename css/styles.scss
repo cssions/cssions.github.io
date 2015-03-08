@@ -87,8 +87,8 @@ h1,h3,h4,h5 {
 
 
 h1 {
-	font-size:50px;
-	line-height:50px;
+	font-size:60px;
+	line-height:60px;
 	color:#fff;
 	letter-spacing:4px;
 	text-align:center;
@@ -109,8 +109,8 @@ h1 {
 }
 
 h2 {
-	font-size:28px;
-	line-height:34px;	
+	font-size:30px;
+	line-height:40px;	
 	text-align:center;
 	@extend %roboto;
 	color:#fff;
@@ -123,6 +123,6 @@ p {
 }
 
 img {
-	max-width:100%;
+	width:500px;
 	height:auto;
 }
